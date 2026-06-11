@@ -1,0 +1,446 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+}
+/* nav  */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:blue;
+    color:#fff;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 5%;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+/* home section */
+section{
+    padding:90px 5%;
+    color: blue;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-color: #fff;
+    color:blue;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#3B08F3;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:15px
+}
+
+#about {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.about-img,
+.about-text {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.grid{
+    display:grid;
+    gap:20px;
+}
+
+/* Portfolio Grid */
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.portfolio .card p{
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+/* Cards */
+.portfolio .card{
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+    background:#fff;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Images */
+.portfolio .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.5s ease;
+}
+
+/* Hover effect */
+.portfolio .card:hover img{
+    transform:scale(1.1);
+}
+
+.portfolio .card h3{
+    padding:15px;
+    text-align:center;
+}
+
+/* Lightbox */
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+
+
+.card{
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#fff;
+}
+
+#team {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsive grid layout */
+.grid.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Your existing card + improvements */
+.c {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Make images responsive and aligned */
+.c img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+#caard{
+    display: none;
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    background: #f3f3f3;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.testimonial {
+    display: none;
+    align-items: center;
+    background: #fff;
+}
+
+.testimonial.active {
+    display: flex;
+}
+
+.testimonial-image {
+    flex: 1;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonial-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.testimonial-content small {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.testimonial-content h3 {
+    margin: 10px 0 20px;
+}
+
+.testimonial-content p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: gold;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1f5fbf;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    color: #777;
+    z-index: 10;
+}
+
+.prev {
+    left: -50px;
+}
+
+.next {
+    right: -50px;
+}
+
+.faq-item{
+    border-bottom:1px solid #ddd;
+    padding:15px 0;
+}
+
+.faq-question{
+    cursor:pointer;
+    font-weight:bold;
+}
+.faq-answer{
+    display:none;
+    padding-top:10px;
+}
+
+form{
+    display:grid;
+    gap:15px;
+    max-width:600px
+}
+input,textarea{
+    padding:12px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contactform{
+    width: 100%;
+    max-width: 500px;
+}
+
+#contactform input,
+#contactform textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contactform button{
+    display: block;
+    margin: 0 auto;
+}
+.popup{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 999;
+}
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.nav-links{
+    display:none;
+    flex-direction:column;
+    background:#111;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:220px;
+    padding:20px;
+}
+
+.nav-links.active{
+    display:flex;
+}
+.menu-btn{
+    display:block;
+}
+.hero h1{
+    font-size:2rem;
+}
+#contact form{
+    padding:10px;
+}
+
+#about{
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-img,
+.about-text{
+    width: 100%;
+}
+
+.portfolio{
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+    scroll-behavior:smooth;
+}
+  .grid.team {
+    grid-template-columns: 1fr;
+  }
+
+.portfolio .card{
+    min-width:100%;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial.active {
+    flex-direction: column;
+}
+
+.testimonial-content {
+    padding: 25px;
+}
+
+.testimonial-image img{
+    object-fit: cover;
+    height: 20rem;
+    width: 22rem;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+}
+

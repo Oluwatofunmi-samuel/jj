@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowthForge Agency</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+</script>
+</head>
+<body>
+
+<!-- header section -->
+<header>
+<nav>
+<div class="logo">GrowthForge</div>
+<div class="menu-btn">☰</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- hero section -->
+<section class="hero" id="home">
+<div>
+<h1>Elevate your brand and accelerate growth.</h1>
+<p>Get Marketing, Promotion & Digital Growth Solutions</p>
+<a href="#contact" class="btn">Get Started</a>
+</div>
+</section>
+
+<!-- about section  -->
+<section id="about">
+    <div class="about-img">
+        <img src="img/abo.jpg" alt="team">
+    </div>
+
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>GrowthForge is a forward-thinking marketing and brand growth agency dedicated to helping businesses expand their reach, strengthen their presence, and achieve lasting success. We blend strategic insight, creative thinking, and data-driven solutions to develop campaigns that capture attention, build meaningful connections, and drive measurable results.
+        <br>
+        In an ever-evolving digital world, standing out requires more than visibility—it requires a clear strategy, compelling messaging, and consistent execution. At GrowthForge, we work closely with businesses to craft tailored promotion and marketing solutions that align with their goals and position them for sustainable growth.
+        <br>
+        Our team is committed to delivering excellence through innovation, precision, and a deep understanding of modern market dynamics. Whether supporting startups seeking recognition or established organizations looking to scale, we provide the expertise and tools needed to navigate competitive markets with confidence.
+        <br>
+        Serving clients across industries and regions, GrowthForge is more than a marketing agency—we are a growth partner focused on transforming potential into performance. Every strategy we create is designed to help brands build authority, increase engagement, and unlock new opportunities for success. At GrowthForge, growth is not just an objective; it is the foundation of everything we do.</p>
+    </div>
+    </section>
+
+<!-- services -->
+<section id="services">
+<h2>Services</h2>
+<div class="grid services">
+<div class="card"><strong><h3 style="color: rgb(9, 9, 99);">Crowdfunding Campaign Support</h3><p>Strategy, design, marketing.</p></strong></div>
+<div class="card"><h3>Content Writing & Copywriting </h3><p>Blogs, SEO content, product descriptions</p></div>
+<div class="card"><h3>Digital Marketing</h3><p>Social media management, email campaigns, PPC advertising.</p></div>
+<div class="card"><h3>Graphic Design</h3><p>Logos, branding, social media visuals</p></div>
+<div class="card"><h3>Website Design & Development</h3><p>WordPress, Shopify, and custom builds.</p></div>
+<div class="card"><h3>Video Editing & Animation</h3></div>
+<div class="card"><h3>Virtual Assistance & Administrative Support</h3></div>
+<div class="card"><h3>Translation & Localization Services</h3></div>
+</div>
+</section>
+
+<!-- portfolio -->
+<!-- Portfolio -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio">
+        <div class="card">
+            <img src="img/port1.jpeg" alt="Project One" onclick="openImage(this.src)">
+            <p>Designed and managed a fundraising campaign, optimizing campaign presentation, outreach strategy,
+               and donor engagement  to support  fundraising goals.</p>
+        </div>
+
+        <div class="card">
+            <img src="img/port2.jpeg" alt="Project Two" onclick="openImage(this.src)">
+            <p>Through targeted outreach and optimized digital channels, we expanded campaign visibility and connected the fundraiser with a larger audience of potential donors.</p>
+        </div>
+
+        <div class="card">
+            <img src="img/port3.jpeg" alt="Project Three" onclick="openImage(this.src)">
+            <p>We streamlined the donation process, improved campaign storytelling, and implemented conversion-focused design updates to increase donor participation.</p>
+        </div>
+                <div class="card">
+            <img src="img/port4.jpeg" alt="Project Three" onclick="openImage(this.src)">
+            <p>By strengthening social sharing and supporter communication, we helped build momentum and encouraged repeat engagement throughout the campaign.</p>
+        </div>
+        <div class="card" id="caard">
+            <img src="img/port5.jpeg" alt="Project Three" onclick="openImage(this.src)">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+        <img id="fullImage" alt="Full View">
+    </div>
+</section>
+
+<!-- team -->
+<section id="team">
+<h2>Our Team</h2>
+<div class="grid team">
+<div class="c"><img src="img/ceo.jpg"><h3>John Smith</h3><p>CEO</p></div>
+<div class="c"><img src="img/ceo2.jpg"><h3>Sarah Lee</h3><p>Marketing Lead</p></div>
+<div class="c"><img src="img/ceo3.jpg"><h3>David Kim</h3><p>Designer</p></div>
+</div>
+</section>
+
+<!-- testimonial -->
+<section class="testimonials-section">
+    <h2>TESTIMONIALS</h2>
+
+    <div class="testimonial-slider">
+
+        <button class="arrow prev">&#10094;</button>
+
+        <div class="testimonial active">
+            <div class="testimonial-image">
+                <img src="img/testimonial1.jpg" alt="kaly Vanderpool">
+            </div>
+
+            <div class="testimonial-content">
+                <small>GOFUNDME LINK</small>
+                <h3>Kaly Vanderpool</h3>
+
+                <p>
+                    I am Sincerely grateful for the exceptional suport provided by this promotion company. Their strategic marketing campaign, resulting in a substaining rise to donations. I highly recommend their services to anyone seeking professional fundraising promotion.</p>
+                <div class="stars">★★★★★</div>
+
+                <a href="https://gofundme.com/f/support-collins-fight-against-brain-cancer/" target="_blank" class="btn">
+                    GOFUNDME LINK
+                </a>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="img/testimonial2.png" alt="Amy Orlando">
+            </div>
+
+            <div class="testimonial-content">
+                <small>GOFUNDME LINK</small>
+                <h3>Amy Orlando</h3>
+
+                <p>
+                I was impressed by the quality of their service and commitment shown throughout the promotion process. Their targeted outreach and marketing approach increased awareness of my fundraiser and contributed significantly to its overall progress.
+                </p>
+
+                <div class="stars">★★★★★</div>
+
+                <a href="https://gofundme.com/f/community-care-for-the-oberst-family" target="_blank" class="btn">
+                    GOFUNDME LINK
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="img/testimonial3.jpg" alt="Leela Horowitz">
+            </div>
+
+            <div class="testimonial-content">
+                <small>GOFUNDME LINK</small>
+                <h3>Leela Horowitz</h3>
+
+                <p>
+                    Patnering with this promotion company was one of the best decision i made for my GoFundme campaign. Their expertise in fundraising promotiion helped maximize the campaign's reach and played an important role on advancing my fundraising objectives.
+               </p>
+
+                <div class="stars">★★★★★</div>
+
+                <a href="https://gofundme.com/f/tarafetzer" target="_blank" class="btn">
+                    GOFUNDME LINK
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="img/testimonial4.webp" alt="Sarah James">
+            </div>
+
+            <div class="testimonial-content">
+                <small>GOFUNDME LINK</small>
+                <h3>Mady Sweeny</h3>
+
+                <p>
+                From the beginning of our collaboration, the team maintained excellent communication anf implemented effective promotional strategies. Their effors greatly enhanced the exposure of my campaign and helped generate meaningful support from donors
+                </p>
+
+                <div class="stars">★★★★★</div>
+
+                <a href="https://gofundme.com/f/support-dennis-sotos-fight-against-cancer" target="_blank" class="btn">
+                    GOFUNDME LINK
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="img/testimonial5.jpeg" alt="Sarah James">
+            </div>
+
+            <div class="testimonial-content">
+                <small>GOFUNDME LINK</small>
+                <h3>Mkale Baker</h3>
+
+                <p>
+                    The professionalism and dedication demonstrated by this team exceeded my expectations. THrough their promotional expertize my GoFundME campaign reached a broader audience and attracted consistent donor engagement. Their contribution played a vital role in the success of my fundraiser.
+                </p>
+
+                <div class="stars">★★★★★</div>
+
+                <a href="https://gofundme.com/f/from-burger-king-to-college-a-dream" target="_blank" class="btn">
+                    GOFUNDME LINK
+                </a>
+            </div>
+        </div>
+
+        <button class="arrow next">&#10095;</button>
+
+    </div>
+</section>
+<!-- faqs  -->
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<div class="faq-question">What services do you offer?</div>
+<div class="faq-answer">Growthforge provides digital promotion services designed to help brands, businesses, and fundraising campaigns increase visibility, audience reach, and online engagement.
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Do you work internationally?</div>
+<div class="faq-answer">Yes, we serve clients worldwide.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">What types of campaigns do you promote?</div>
+<div class="faq-answer">We support a wide range of campaigns including: <br>
+
+
+* Fundraising campaigns <br>
+* Business promotions <br>
+* Personal brands <br>
+* Product launches <br>
+* Social media growth campaigns <br>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Do you guarantee results?</div>
+<div class="faq-answer">We help amplify your visibility, expand your reach, and boost engagement through targeted promotional strategies. Outcomes may vary based on campaign effectiveness, audience responsiveness, and market dynamics.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">How do I get started?</div>
+<div class="faq-answer">Simply contact us or submit your campaign information through our website to begin the process.
+</div>
+</div>
+</section>
+
+<!-- contact  -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form id="contactform">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <p><strong>Address:</strong> No.1 Sabu Sonjina Street, Lagos, Nigeria</p>
+</section>
+
+<!-- popup -->
+<div id="popup" class="popup">Message Sent Successfully ✅</div>
+
+<!-- footer -->
+<footer>
+<p>© 2026 Growthforge. All Rights Reserved.</p>
+</footer>
+
+<!-- javascript  -->
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle menu on button click
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+// Close menu if clicking outside the nav
+document.addEventListener('click', (e) => {
+  if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+    navLinks.classList.remove('active');
+  }
+});
+
+// Smooth scrolling (optional, keeps your previous feature)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+
+
+document.querySelectorAll('.faq-question').forEach(q=>{
+q.addEventListener('click',()=>{
+const ans=q.nextElementSibling;
+ans.style.display=ans.style.display==='block'?'none':'block';
+});
+});
+
+    // Lightbox
+    function openImage(src){
+        document.getElementById("lightbox").style.display = "flex";
+        document.getElementById("fullImage").src = src;
+    }
+
+    function closeImage(){
+        document.getElementById("lightbox").style.display = "none";
+    }
+
+    // Auto slide on mobile
+    const portfolio = document.querySelector('.portfolio');
+    const cards = document.querySelectorAll('.portfolio .card');
+
+    let currentSlide = 0;
+
+    function autoSlide(){
+
+        if(window.innerWidth <= 768){
+
+            currentSlide++;
+
+            if(currentSlide >= cards.length){
+                currentSlide = 0;
+            }
+
+            portfolio.scrollTo({
+                left: currentSlide * portfolio.clientWidth,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    setInterval(autoSlide, 3000);
+
+    // slide not when moving 
+    function autoSlide(){
+
+    const lightbox = document.getElementById("lightbox");
+
+    if(window.innerWidth <= 768 &&
+       lightbox.style.display !== "flex"){
+
+        currentSlide++;
+
+        if(currentSlide >= cards.length){
+            currentSlide = 0;
+        }
+
+        portfolio.scrollTo({
+            left: currentSlide * portfolio.clientWidth,
+            behavior: 'smooth'
+        });
+    }
+
+    const testimonials = document.querySelectorAll(".testimonial");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+function showTestimonial(i) {
+    testimonials.forEach(t =>
+        t.classList.remove("active")
+    );
+
+    testimonials[i].classList.add("active");
+}
+
+nextBtn.addEventListener("click", () => {
+    index = (index + 1) % testimonials.length;
+    showTestimonial(index);
+});
+
+prevBtn.addEventListener("click", () => {
+    index = (index - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(index);
+});
+
+// Auto slide only on mobile
+if (window.innerWidth <= 768) {
+    setInterval(() => {
+        index = (index + 1) % testimonials.length;
+        showTestimonial(index);
+    }, 4000);
+}
+}
+
+document.getElementById("contactform").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+    ).then(() => {
+
+        // show popup
+        let popup = document.getElementById("popup");
+        popup.style.display = "block";
+
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 3000);
+
+        this.reset();
+
+    }, (error) => {
+        alert("Failed to send message ❌");
+        console.log(error);
+    });
+});
+
+</script>
+</body>
+
+</html>
