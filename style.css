@@ -188,7 +188,7 @@ section{
 }
 
 /* Your existing card + improvements */
-.card {
+.c {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -197,7 +197,7 @@ section{
 }
 
 /* Make images responsive and aligned */
-.card img {
+.c img {
   width: 100%;
   max-width: 150px;
   height: 150px;
@@ -206,6 +206,7 @@ section{
   margin: 0 auto 10px;
   display: block;
 }
+
 
 #caard{
     display: none;
